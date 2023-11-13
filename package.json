@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "dev": "tsx watch ./src/index.ts",
     "seed": "tsx ./db/seed.ts",
-    "vercel-build": "tsx watch ./src/index.ts"
+    "build": "tsup -d build/src src && tsup -d build/db db"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "tsup": "^7.2.0",
     "tsx": "^4.1.1",
     "typescript": "^5.0.3"
   },
