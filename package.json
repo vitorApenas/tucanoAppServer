@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "tsx watch ./src/index.ts",
     "seed": "tsx ./db/seed.ts",
-    "build": "tsup -d build/src src && tsup -d build/db db"
+    "build": "tsup -d build/src src && tsup -d build/db db",
+    "start": "node --experimental-modules build/src/index.js"
   },
   "keywords": [],
   "author": "",
