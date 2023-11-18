@@ -377,6 +377,7 @@ apiRouter.post('/aulaAtual', async (req, res)=>{
     const dia = req.body.dia;
     const hora = req.body.hora;
     const minuto = req.body.minuto;
+
     try{
         if(dia===0 || dia===6) return res.json({
             aulaAtual: "-",
@@ -389,6 +390,7 @@ apiRouter.post('/aulaAtual', async (req, res)=>{
             proxPresente: "#CC3535",
         });
         const infoTurma = await Turmas.findAll({where: {turma: siglaTurma}});
+
         if(!infoTurma[0]) return res.json({
             msg: "Houve um erro no servidor, tente novamente mais tarde"
         });
@@ -396,7 +398,7 @@ apiRouter.post('/aulaAtual', async (req, res)=>{
         const aula = await Horarios.count({where: {idTurma: infoTurma[0].id}});
 
         if(aula > 30){
-            const horarios = await Horarios.findAll({where: {aula: {[Op.between]: [(dia-1)*9, dia*9-1]}}, order: ['aula']});
+            const horarios = await Horarios.findAll({where: {aula: {[Op.between]: [(dia-1)*9, dia*9-1]}, idTurma: infoTurma[0].id}, order: ['aula']});
 
             let output:any[] = [];
             
