@@ -655,7 +655,7 @@ apiRouter.get('/posts', async (req, res)=>{
         while(i < posts.length){
             const func = await FuncionariosAtivos.findAll({where: {email: posts[i].email}, attributes: ['nome', 'fotoPerfil']});
 
-            const meses = ['jan', 'fev', 'mar', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+            const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
             
             const createdAt = {
                 dia: posts[i].createdAt.getDate(),
