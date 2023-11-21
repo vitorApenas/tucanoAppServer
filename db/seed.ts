@@ -118,6 +118,27 @@ interface typeTags{
             turma:'3E - Desenvolvimento de Sistemas',
             nome:'Rodrigo Fernandes de Lucena',
             rg:'33.333.333-3'
+        },
+        {
+            rm: 210967,
+            email:'luiz.silva1437@etec.sp.gov.br',
+            turma:'3E - Desenvolvimento de Sistemas',
+            nome:'Luiz Gustavo Silva',
+            rg:'44 .444.444-4'
+        },
+        {
+            rm: 210964,
+            email:'alexander.acras@etec.sp.gov.br',
+            turma:'3E - Desenvolvimento de Sistemas',
+            nome:'Alexander Lysandre dos Santos Acras',
+            rg:'55.555.555-5'
+        },
+        {
+            rm: 210972,
+            email:'mateus.santos411@etec.sp.gov.br',
+            turma:'3E - Desenvolvimento de Sistemas',
+            nome:'Mateus André Silva Santos',
+            rg:'66.666.666-6'
         }
     ];
 
@@ -339,7 +360,7 @@ interface typeTags{
             sigla: '-',
             nome: 'Aula vaga',
             sala: '-',
-            presente: '#FFCC18'
+            presente: '#CC3535'
         },
         {
             id: '7-XptxMDwryuaQPaVe65N',
@@ -1280,7 +1301,7 @@ interface typeTags{
     const posts:typePost[] = [
         {
             id: 'JyKHKFilW6I6JiWOt3TvO',
-            txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo congue nulla, et euismod lectus semper sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus bibendum fermentum tellus sed sollicitudin. Cras eu leo sed dolor aliquet auctor. Aenean eget iaculis justo. In bibendum dolor sit amet lobortis egestas. In vel tempor nunc. Cras hendrerit lacus lacus, non tincidunt diam maximus rutrum. Morbi id luctus nisl. Aliquam non tempus leo, non molestie velit. Nulla aliquam nisl eu mauris mattis, in fermentum metus luctus. Nunc in finibus turpis. Sed ut dignissim ipsum, ut egestas nisi. Pellentesque eu accumsan purus. Vivamus luctus elit eu lectus elementum, et pulvinar sem interdum.',
+            txt: 'Hoje serão apresentados os TCCs dos terceiros anos do ETIM de Desenvolvimento de Sistemas.',
             foto: false,
             email: 'rosa.shimizu@etec.sp.gov.br'
         },
