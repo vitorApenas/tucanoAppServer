@@ -30,17 +30,6 @@ const storage = multer.diskStorage({
       cb(null, `${newNameFile}.${extensao}`);
     },
 });
-
-/*const aepStorage = multer.diskStorage({
-    destination: function (req, file, cb){
-        cb(null, 'assets/aepImages');
-    },
-    filename: function (req, file, cb) {
-        const extensao = file.originalname.split('.')[1];
-        const newNameFile = file.originalname.split('.')[0];
-        cb(null, `${newNameFile}.${extensao}`);
-    }
-})*/
   
   const upload = multer({ storage });
   //const uploadAep = multer({ aepStorage });
